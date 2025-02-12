@@ -7,72 +7,128 @@
 			href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./styles/general.css">
-		<link rel="stylesheet" href="./styles/header.css">
-		<link rel="stylesheet" href="./styles/video.css">
+		<link rel="stylesheet" href="./styles/general.css" />
+		<link rel="stylesheet" href="./styles/header.css" />
+		<link rel="stylesheet" href="./styles/video.css" />
+		<link rel="stylesheet" href="./styles/sidebar.css">
 		<title>YouTube Clone</title>
 	</head>
 	<body>
 		<div class="header">
-
 			<div class="left-section">
-				
-					<img class="hamburger-icon" src="./header-icons/hamburger-menu.svg" alt="hamburger icon">
-				
-				
-					<img class="youtube-logo" src="./header-icons/youtube-logo.svg" alt="YouTube logo">
-				
+				<img
+					class="hamburger-icon"
+					src="./header-icons/hamburger-menu.svg"
+					alt="hamburger icon"
+				/>
+
+				<img
+					class="youtube-logo"
+					src="./header-icons/youtube-logo.svg"
+					alt="YouTube logo"
+				/>
 			</div>
 
 			<div class="middle-section">
-				
-					<input class="search-bar" type="text" placeholder="Search" />
-				
+				<input class="search-bar" type="text" placeholder="Search" />
+
 				<button class="search-button">
-					<img class="search-icon" src="./header-icons/search-icon.svg" alt="">
+					<img
+						class="search-icon"
+						src="./header-icons/search-icon.svg"
+						alt=""
+					/>
 				</button>
 
 				<button class="voice-search-button">
-					<img class="voice-search-icon" src="./header-icons/voice-search-icon.svg" alt="">
+					<img
+						class="voice-search-icon"
+						src="./header-icons/voice-search-icon.svg"
+						alt=""
+					/>
 				</button>
-				
 			</div>
 
 			<div class="right-section">
-				
-					<img class="upload-icon icon " src="./header-icons/upload-camera-icon.svg" alt="">
-				
-				
-					<img class="apps-icon icon " src="./header-icons/youtube-apps-icon.svg" alt="">
-				
-				
-					<img class="notification-icon icon " src="./header-icons/notifications-icon.svg" alt="">
-				
-				
-					<img class="profile-pic" src="./channel-images/my-channel-icon.jpeg" alt="">
-				
+				<img
+					class="upload-icon icon"
+					src="./header-icons/upload-camera-icon.svg"
+					alt=""
+				/>
+
+				<img
+					class="apps-icon icon"
+					src="./header-icons/youtube-apps-icon.svg"
+					alt=""
+				/>
+
+				<div class="notification-icon-container">
+					<img
+						class="notification-icon icon"
+						src="./header-icons/notifications-icon.svg"
+						alt=""
+					/>
+					<div class="notification-counter">10</div>
+
 			</div>
 
+				<img
+					class="profile-pic"
+					src="./channel-images/my-channel-icon.jpeg"
+					alt=""
+				/>
+			</div>
 
-		</div>
+			<!-- Sidebar -->
+			<div class="sidebar">
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/home.svg" alt="">
+					<p>Home</p>
+				</div>
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/explore.svg" alt="">
+					<p>Explore</p>
+				</div>
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/subscriptions.svg" alt="">
+					<p>Subscriptions</p>
+				</div>
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/originals.svg" alt="">
+					<p>Originals</p>
+				</div>
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/youtube-music.svg" alt="">
+					<p>YouTube Music</p>
+				</div>
+				<div class="sidebar-link">
+					<img src="./sidebar-icons/library.svg" alt="">
+					<p>Library</p>
+				</div>
+			</div>
+
+		</div>	<!--End of header div-->
+
 
 		<div class="video-grid-container">
-
 			<!-- First Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-1.webp"
 						alt=""
 					/>
+					<div class="video-time">14:20</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-1.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-1.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
@@ -82,55 +138,55 @@
 						<p class="video-author">Marques Brownlee</p>
 						<p class="video-stats">3.4M views &#183; 6 months ago</p>
 					</div>
-
 				</div>
-
 			</div>
 
 			<!-- Second Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-2.webp"
 						alt=""
 					/>
+					<div class="video-time">8:22</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-2.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-2.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
-						<p class="video-title">
-							Try Not To Laugh Challenge #9
-						</p>
+						<p class="video-title">Try Not To Laugh Challenge #9</p>
 						<p class="video-author">Markiplier</p>
 						<p class="video-stats">19M views &#183; 4 years ago</p>
 					</div>
-
 				</div>
-
 			</div>
 
 			<!-- Third Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-3.webp"
 						alt=""
 					/>
+					<div class="video-time">9:13</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-3.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-3.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
@@ -140,55 +196,58 @@
 						<p class="video-author">SSSniperWolf</p>
 						<p class="video-stats">12M views &#183; 1 year ago</p>
 					</div>
-
 				</div>
-				
 			</div>
 
 			<!-- Fourth Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-4.webp"
 						alt=""
 					/>
+					<div class="video-time">22:09</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-4.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-4.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
 						<p class="video-title">
-							The Simplest Math Problem No One Can Solve - Collatz Conjecture
+							The Simplest Math Problem No One Can Solve - Collatz
+							Conjecture
 						</p>
 						<p class="video-author">Veritasium</p>
 						<p class="video-stats">18M views &#183; 4 months ago</p>
 					</div>
-
 				</div>
-
 			</div>
 
 			<!-- Fifth Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-5.webp"
 						alt=""
 					/>
+					<div class="video-time">11:17</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-5.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-5.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
@@ -198,26 +257,27 @@
 						<p class="video-author">CS Dojo</p>
 						<p class="video-stats">519K views &#183; 5 years ago</p>
 					</div>
-
 				</div>
-
 			</div>
 
 			<!-- Sixth Video -->
 			<div class="video-preview">
-
-				<div>
+				<div class="thumbnail-row">
 					<img
 						class="thumbnail"
 						src="./thumbnails/thumbnail-6.webp"
 						alt=""
 					/>
+					<div class="video-time">19:59</div>
 				</div>
 
 				<div>
-
 					<div class="icon-div">
-						<img class="youtuber-picture" src="./channel-images/channel-6.jpeg" alt="" />
+						<img
+							class="youtuber-picture"
+							src="./channel-images/channel-6.jpeg"
+							alt=""
+						/>
 					</div>
 
 					<div class="video-info">
@@ -227,12 +287,8 @@
 						<p class="video-author">MrBeast</p>
 						<p class="video-stats">141M views &#183; 1 year ago</p>
 					</div>
-
 				</div>
-
 			</div>
-
-			
 		</div>
 	</body>
 </html>

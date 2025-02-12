@@ -3,6 +3,23 @@
    margin-bottom: 8px;
 }
 
+.thumbnail-row {
+   position: relative;
+}
+
+.video-time {
+   background-color: #000;
+   color: #fff;
+   position: absolute;
+   bottom: 20px;
+   right: 6px;
+   font-family: 'Roboto', Arial;
+   font-size: 14px;
+   font-weight: 700;
+   padding: 3px;
+   border-radius: 2px;
+}
+
 .video-grid-container {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -24,7 +41,7 @@
 .video-title {
    margin-top: 0;
    font-weight: 500;
-   font-size: 14px;
+   font-size: 15px;
    line-height: 20px;
    letter-spacing: 0.15px;
 }
